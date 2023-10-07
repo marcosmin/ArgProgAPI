@@ -1,0 +1,19 @@
+input {
+  color: white;
+  background-color: #4b4b4b;
+  border-radius: 10px;
+  height: 4vh;
+  width: 17vw;
+  padding-left: 0.7em;
+  font-size: 1.2em;
+  margin-bottom: 1vh;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.565);
+}
+
+.ciudad {
+  display: flex;
+  justify-content: flex-end;
+}

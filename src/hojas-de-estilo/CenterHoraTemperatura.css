@@ -1,0 +1,45 @@
+.centerHoraTemp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5vh;
+  margin-top: 0.2vh;
+}
+
+.centerHora {
+  color: #4B4B4B;
+  font-size: 15px;
+  text-align: center;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.centerTemperatura {
+  color: #4B4B4B;
+  font-size: 24px;
+  text-align: center;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.lineaHoraTemp {
+  background-color: #6044AE;
+  border-radius: 5px;
+  min-width: 90%;
+  min-height: 2px;
+  opacity: 20%;
+}
+
+/* Estilos hora actual */
+
+.centerTemperaturaActual {
+  color: #6044AE;
+  font-size: 24px;
+  text-align: center;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.lineaHoraTempActual {
+  background-color: #2ed400;
+  border-radius: 5px;
+  min-width: 90%;
+  min-height: 2px;
+}

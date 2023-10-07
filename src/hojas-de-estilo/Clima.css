@@ -1,0 +1,162 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  /* overflow: hidden; */
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  /* align-items: center;
+  justify-content: center; */
+  flex: 2;
+  background-color: white;
+  margin: 4vh 2vw 0 2vw;
+  border-radius: 20px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  /* background-color: magenta; */
+  margin: 0 1vw 0 1vw;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  flex: 2;
+  /* background-color: yellow; */
+  margin: 0 1vw 2vh 1vw;
+}
+
+
+.imagenClima {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 100%; */
+  flex: 1;
+  /* border: 2px dotted green; */
+  margin: 2vh 1vw 2vh 1vw;
+}
+
+.datosActuales {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1vh;
+  /* height: 100%; */
+  flex: 1;
+  /* border: 2px dotted green; */
+  margin: 2vh 1vw 2vh 1vw;
+}
+
+
+.estadoClima {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  /* height: 100%; */
+  flex: 1;
+  /* border: 2px dotted green; */
+  margin: 2vh 1vw 0 1vw;
+}
+
+.rowTempXHora {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1vh 1.5vw 0vh 1.5vw;
+}
+
+.rowTempXHora button {
+  border: 1px solid #7f7f7f;
+  border-radius: 15px;
+  padding: 1px;
+  height: 90px;
+}
+
+.rowTempXHora button:hover {
+  background-color: white;
+}
+
+.rowTempXHora button:active {
+  background-color: rgb(230, 230, 230);
+}
+
+.temperaturasDiaria {
+  display: flex;
+  flex-direction: row;
+  justify-content:left;
+  flex-wrap:nowrap;
+  overflow: hidden;
+  gap: 1.6vh;
+  /* height: 100%; */
+  flex: 2;
+  /* border: 2px dotted green; */
+  margin: 1vh 1vw 1vh 1vw;
+}
+
+.temperaturaXHora {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 68px;
+  min-height: 85px;
+  /* border: 1px solid red; */
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+  margin-bottom: 0.5vh;
+}
+
+
+.temperaturaMaxMin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 100%; */
+  flex: 1;
+  /* border: 2px dotted green; */
+  background-color: white;
+  margin: 2vh 1vw 2vh 1vw;
+  border-radius: 20px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.indices {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2vh;
+  /* height: 100%; */
+  flex: 3;
+  /* border: 2px dotted green; */
+  margin: 2vh 1vw 2vh 0.5vw;
+}
+
+
+.compIndices {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* min-width: 140px; */
+  width: 10vw;
+  /* min-height: 126px; */
+  min-height: 7vw;
+  /* border: 2px dotted red; */
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+
+@media screen and (min-width: 768px) {
+  /*  */
+}

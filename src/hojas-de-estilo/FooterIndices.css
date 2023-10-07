@@ -1,0 +1,51 @@
+.footerIndice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vh;
+  margin: 1vh 0;
+}
+
+.tituloIndice {
+display: flex;
+flex-direction: row;
+align-items: center;
+gap: 0.3vh;
+}
+
+.tituloIndice p {
+  color: #4B4B4B;
+  color: #6044AE;
+  font-size: 12px;
+  text-align: center;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.comentarioIndice {
+  color: #4B4B4B;
+  font-size: 12px;
+  text-align: center;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.valorIndice {
+  color: #4b4b4b;
+  font-size: 36px;
+  text-align: center;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+}
+
+.unidadIndice {
+  color: #4B4B4B;
+  font-size: 16px;
+  text-align: center;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.valorYUnidad {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 3px;
+}

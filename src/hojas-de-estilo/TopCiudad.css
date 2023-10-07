@@ -1,0 +1,13 @@
+.ciudad p {
+  color: #6044AE;
+  font-size: 27px;
+  font-size: 1.7vw;
+  text-align: center;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.ciudad img {
+  margin-right: 1vh;
+  width: 1.4vw;
+  height: 1.8vw;
+}

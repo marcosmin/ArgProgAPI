@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# Aplicación de Clima en REACT 🌤️
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+¡Bienvenido/a a la Aplicación de Clima desarrollada con React! Esta aplicación proporciona información detallada sobre el clima actual, el pronóstico diario y otros datos relevantes, como el índice UV, la velocidad del viento, la humedad, la visibilidad y la calidad del aire.
 
-## Available Scripts
+Esta aplicación se creó como parte de un proyecto práctico durante la formación en "Argentina Programa 4.0", ofrecida por FAMAF - UNC en el año 2023. | 👨‍🎓 Desarrollador: Marcos Mingo.
 
-In the project directory, you can run:
+## Captura de Pantalla 📸
+![Captura 1](./src/imagenes/screenshot1.jpg)
 
-### `npm start`
+## Estructura del Proyecto
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+El proyecto está organizado en varios archivos y directorios que cumplen diferentes funciones. A continuación, se describen estos componentes y archivos clave:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Componentes de React
 
-### `npm test`
+1. ☀️ **TopImagenClima**: Este componente muestra una imagen que representa el estado del clima actual.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. 🌍 **TopInputCiudad**: Se utiliza para ingresar el nombre de la ciudad cuyo clima se quiere consultar.
 
-### `npm run build`
+3. 🌡️ **TopTemperaturaActual**: Muestra la temperatura actual en grados Celsius.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. 📅 **TopDia**: Muestra el nombre del día actual, la fecha actual y la hora actual.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5. 🏙️ **TopCiudad**: Muestra la ubicación actual.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+6. 🌤️ **CenterClimaHoy**: Muestra el estado del clima para el día actual.
 
-### `npm run eject`
+7. 🕒 **CenterHoraTemperatura**: Muestra la temperatura por hora para el día actual.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+8. 🌡️ **FooterMaxMin**: Muestra las temperaturas máxima y mínima para el día actual.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+9. 🌎 **FooterIndices**: Muestra varios índices relacionados con el clima, como el índice UV, la velocidad del viento, la hora del amanecer y otros.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Archivos JSON
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- 📄 **clima.json**: Contiene datos relacionados con el clima actual y pronósticos futuros.
 
-## Learn More
+- 📄 **estadoClima.json**: Proporciona información sobre el estado del clima en función de códigos de estado.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Datos del Clima
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+El código obtiene datos del clima de los archivos JSON mencionados anteriormente y realiza cálculos basados en estos datos para mostrar información relevante en la aplicación.
 
-### Code Splitting
+## Scroll Horizontal
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+La aplicación permite desplazarse horizontalmente por las temperaturas por hora para el día actual utilizando los botones "&lt;" y "&gt;".
 
-### Analyzing the Bundle Size
+## Descripción de los índices extras
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+El código utiliza condiciones para determinar una descripcion en base al valor actual del índice. Estos comentarios se muestran en la parte inferior de la aplicación.
 
-### Making a Progressive Web App
+## Ejecutar la Aplicación ▶️
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Para ejecutar la aplicación, se necesita un entorno de desarrollo de React configurado. Puede seguir estos pasos:
 
-### Advanced Configuration
+1. Clonar el repositorio.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+2. Asegurarse de tener Node.js y npm instalados en su sistema.
 
-### Deployment
+3. En el directorio raíz del proyecto, ejecute `npm install` para instalar las dependencias.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+4. Luego, ejecute `npm start` para iniciar la aplicación en un servidor de desarrollo.
 
-### `npm run build` fails to minify
+5. Abra su navegador y vaya a `http://localhost:3000` para ver la aplicación en funcionamiento.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+6. Tambien puede **Navegar a:** https://marcosmin.github.io/ArgProgAPI/ 🌐
+
+## Conclusiones
+
+Este proyecto proporciona una aplicación de pronóstico del clima que muestra información relevante de manera organizada y atractiva. El código se basa en React y utiliza datos de archivos JSON para mostrar datos y pronósticos en tiempo real (aun no implementado). La aplicación también incorpora una descripcion personalizada segun el valor del indice para proporcionar una experiencia de usuario completa.
+
+
+---
+Hecho con ❤️ por [Marcos Mingo](https://github.com/marcosmin) 😊

@@ -1,0 +1,114 @@
+﻿{
+  "0" : {
+    "nombre": "Despejado",
+    "imagen": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/clear-day.svg"
+  },
+  "1" : {
+    "nombre": "Mayormente despejado",
+    "imagen": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/clear-day.svg"
+  },
+  "2" : {
+    "nombre": "Parcialmente Nublado",
+    "imagen": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/partly-cloudy-day.svg"
+  },
+  "3" : {
+    "nombre": "Nublado",
+    "imagen": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/cloudy.svg"
+  },
+  "45" : {
+    "nombre": "Niebla",
+    "imagen": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/fog.svg"
+  },
+  "46" : {
+    "nombre": "Niebla con escarcha",
+    "imagen": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/haze.svg"
+  },
+  "51" : {
+    "nombre": "Llovizna Ligera",
+    "imagen": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/drizzle.svg"
+  },
+  "53" : {
+    "nombre": "Llovizna moderada",
+    "imagen": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/overcast-drizzle.svg"
+  },
+  "55" : {
+    "nombre": "Llovizna Intensa",
+    "imagen": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/extreme-drizzle.svg"
+  },
+  "56" : {
+    "nombre": "Escarcha Ligera",
+    "imagen": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/sleet.svg"
+  },
+  "57" : {
+    "nombre": "Escarcha Densa",
+    "imagen": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/overcast-sleet.svg"
+  },
+  "61" : {
+    "nombre": "Lluvia ligera",
+    "imagen": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/rain.svg"
+  },
+  "63" : {
+    "nombre": "Lluvia moderada",
+    "imagen": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/overcast-rain.svg"
+  },
+  "65" : {
+    "nombre": "lluvia intensa",
+    "imagen": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/extreme-rain.svg"
+  },
+  "66" : {
+    "nombre": "Lluvia fría, ligera",
+    "imagen": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/rain.svg"
+  },
+  "67" : {
+    "nombre": "Lluvia fría, intensa",
+    "imagen": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/extreme-rain.svg"
+  },
+  "71" : {
+    "nombre": "Nevada ligera",
+    "imagen": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/snow.svg"
+  },
+  "73" : {
+    "nombre": "Nevada moderada",
+    "imagen": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/overcast-snow.svg"
+  },    
+  "75" : {
+    "nombre": "Nevada intensa",
+    "imagen": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/extreme-snow.svg"
+  },    
+  "77" : {
+    "nombre": "Aguanieve",
+    "imagen": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/snow.svg"
+  },
+  "80" : {
+    "nombre": "Tormenta ligera",
+    "imagen": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/thunderstorms-rain.svg"
+  },
+  "81" : {
+    "nombre": "Tormenta moderada",
+    "imagen": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/thunderstorms-overcast-rain.svg"
+  },
+  "82" : {
+    "nombre": "Tormenta fuerte",
+    "imagen": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/thunderstorms-extreme-rain.svg"
+  },
+  "85" : {
+    "nombre": "Tormenta de nieve, moderada",
+    "imagen": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/thunderstorms-overcast-snow.svg"
+  },
+  "86" : {
+    "nombre": "Tormenta de nieve, fuerte",
+    "imagen": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/thunderstorms-extreme-snow.svg"
+  },
+  "95" : {
+    "nombre": "Tormenta eléctrica",
+    "imagen": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/thunderstorms.svg"
+  },
+  "96" : {
+    "nombre": "Tormenta eléctrica con Granizo ligero",
+    "imagen": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/overcast-hail.svg"
+  },
+  "99" : {
+    "nombre": "Tormenta eléctrica con Granizo pesado",
+    "imagen": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/extreme-hail.svg"
+  }
+}
