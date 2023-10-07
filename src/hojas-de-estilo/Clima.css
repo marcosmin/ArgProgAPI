@@ -11,6 +11,7 @@
   /* align-items: center;
   justify-content: center; */
   flex: 2;
+  min-height: 40%;
   background-color: white;
   margin: 4vh 2vw 0 2vw;
   border-radius: 20px;
