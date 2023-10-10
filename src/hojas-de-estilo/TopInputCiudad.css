@@ -1,19 +1,33 @@
 input {
-  color: white;
-  background-color: #4b4b4b;
-  border-radius: 10px;
+  color: #4b4b4b;
+  background-color: #ffffff;
+  border-radius: 15px;
+  border: #e1e1e1 1px solid;
   height: 4vh;
-  width: 17vw;
+  width: 45%;
   padding-left: 0.7em;
   font-size: 1.2em;
-  margin-bottom: 1vh;
+  margin: 2vh 2vh 0 2vh;
 }
 
 input::placeholder {
-  color: rgba(255, 255, 255, 0.565);
+  color: #6b6b6b;
+}
+
+.input-ciudad:focus {
+  outline: none;
+  border: #4b4b4b 1px solid;
 }
 
 .ciudad {
   display: flex;
-  justify-content: flex-end;
+  justify-content:flex-end;
+}
+
+
+@media screen and (min-width: 320px) {
+  input {
+    width: 95%;
+    margin: 2vh 2vh 2vh 2vh;
+  }
 }

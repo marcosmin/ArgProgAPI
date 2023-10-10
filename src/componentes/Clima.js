@@ -185,26 +185,31 @@ function Clima() {
 
       <div className='top'>
 
-        <div className='imagenClima'>
-          <TopImagenClima imagenClima={ estadoClimaImagen } />
+        <div className='inputCiudad'>
+          <TopInputCiudad />
         </div>
-        
-        <div className='datosActuales'>
 
-          <div>
-            <TopInputCiudad />
+        <div className='top2'>
+          
+          <div className='imagenClima'>
+            <TopImagenClima imagenClima={ estadoClimaImagen } />
           </div>
+          
+          <div className='datosActuales'>
 
-          <div className='temperaturaActual'>
-            <TopTemperaturaActual tempActual={ tempActual } />
-          </div>
 
-          <div className='datosDia'>
-            <TopDia dia={ nombreDia } fecha={ fechaActual } horaActual={ horaActual }/>
-          </div>
+            <div className='temperaturaActual'>
+              <TopTemperaturaActual tempActual={ tempActual } />
+            </div>
 
-          <div className='datosCiudad'>
-            <TopCiudad ubicacion={ ubicacion } />
+            <div className='datosDia'>
+              <TopDia dia={ nombreDia } fecha={ fechaActual } horaActual={ horaActual }/>
+            </div>
+
+            <div className='datosCiudad'>
+              <TopCiudad ubicacion={ ubicacion } />
+            </div>
+
           </div>
 
         </div>

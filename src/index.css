@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Sacar barra lateral y hacer scroll con la ruedita */
+html,body{
+  overflow-x: hidden; 
+  color:black; 
+  height:100%; 
+  width:101%; 
+  margin: 0px; 
+  padding: 0px; 
+}
