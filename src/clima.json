@@ -6,7 +6,7 @@
     "timezone": "America/Sao_Paulo",
     "timezone_abbreviation": "-03",
     "elevation": 38.0,
-    "current_weather": {
+    "current": {
         "temperature": 23.9,
         "windspeed": 18.6,
         "winddirection": 261,
