@@ -2,7 +2,6 @@ import React from 'react';
 import '../hojas-de-estilo/CenterHoraTemperatura.css';
 
 function CenterHoraTemperatura({ horaActual, hora, temp }) {
-
   return (
     <div className='centerHoraTemp'>
       <p className='centerHora'>{`${hora}`}</p>

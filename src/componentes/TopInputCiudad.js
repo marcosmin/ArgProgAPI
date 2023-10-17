@@ -1,12 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect} from 'react';
 import '../hojas-de-estilo/TopInputCiudad.css';
 
-
-function TopInputCiudad ({ addMensaje}) {
+function TopInputCiudad () {
   const [nombreCiudad, setNombreCiudad] = useState('');
   const [coordenadas, setCoordenadas] = useState(null);
-
-  
 
   useEffect(() => {
     if (nombreCiudad.trim() === '') {
@@ -27,10 +24,10 @@ function TopInputCiudad ({ addMensaje}) {
       .then(data => {
         if (data.length > 0) {
           const resultado = data[0];
-          const latitud = resultado.lat;
-          const longitud = resultado.lon;
+          let latitud = resultado.lat;
+          let longitud = resultado.lon;
+          console.log(`latitud: ${latitud} longitud: ${longitud}`);
           setCoordenadas({ latitud, longitud });
-          console.log(latitud, longitud);
         } else {
           console.error('Ciudad no encontrada.');
         }
@@ -38,20 +35,20 @@ function TopInputCiudad ({ addMensaje}) {
       .catch(error => {
         console.error('Error al llamar a la API de OpenStreetMap Nominatim:', error);
       });
-  }, [nombreCiudad]);
-
+    }, [nombreCiudad]
+  );
+    
   // Manejador de eventos para la tecla 'Enter' en el input
   const handleKeyPress = event => {
     if (event.key === 'Enter') {
       // Actualiza el estado nombreCiudad cuando se presiona Enter
       setNombreCiudad(event.target.value);
-      console.error(`anda el enter`);
     }
   };
 
-const handleInputChange = event => {
-  setNombreCiudad(event.target.value);
-};
+  const handleInputChange = event => {
+    setNombreCiudad(event.target.value);
+  };
   
   return (
     <div className='ciudad'>
@@ -63,13 +60,6 @@ const handleInputChange = event => {
         onKeyPress={handleKeyPress}
         onChange={handleInputChange}
       />
-
-       {/* {coordenadas && (
-        <p>
-          Latitud: {coordenadas.latitud}, Longitud: {coordenadas.longitud}
-        </p>
-      )}  */}
-
     </div>
   );
 }

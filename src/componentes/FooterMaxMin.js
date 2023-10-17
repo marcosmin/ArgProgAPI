@@ -15,8 +15,6 @@ function FooterMaxMin({ max, min }) {
         <p className='temperaturaMax'>{`${max}º C`}</p>
       </div>
 
-      {/* <hr/> */}
-
       <div className='tMin'>
         <div className='tempImgTitulo'>
           <img src={ tempMinImg } alt={'tempMinImg'} />

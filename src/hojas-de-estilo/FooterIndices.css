@@ -51,7 +51,6 @@ gap: 0.3vh;
   gap: 3px;
 }
 
-
 @media screen and (min-width: 320px) {
   .footerIndice {
     gap: 0.3vh;
@@ -69,7 +68,6 @@ gap: 0.3vh;
     font-size: 1.5vw;
   }
 }
-
 
 @media screen and (min-width: 768px) {
   .footerIndice {
@@ -89,7 +87,6 @@ gap: 0.3vh;
   }
 }
 
-
 @media screen and (min-width: 1024px) {
   .footerIndice {
     gap: 0.5vh;
@@ -107,7 +104,6 @@ gap: 0.3vh;
     font-size: 1vw;
   }
 }
-
 
 @media screen and (min-width: 1440px) {
   .footerIndice {

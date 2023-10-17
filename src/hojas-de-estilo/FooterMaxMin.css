@@ -62,7 +62,6 @@ hr {
   min-width: 55px;
 }
 
-
 @media screen and (min-width: 320px) {
   .fMaxMin {
     flex-direction: row;
@@ -165,7 +164,6 @@ hr {
   .temperaturaMin {
     font-size: 2vw;
   }
-
 }
 
 @media screen and (min-width: 1440px) {
@@ -191,5 +189,4 @@ hr {
   .temperaturaMin {
     font-size: 2.2vw;
   }
-
 }

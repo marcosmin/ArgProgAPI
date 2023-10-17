@@ -10,16 +10,14 @@
 }
 
 
-
 /* LUEGO ELIMINAR ESTILOS DE LOADER */
-
 .loader {
   margin-bottom: 1vh;
   width: 60px;
   height: 40px;
   position: relative;
   display: inline-block;
-  --base-color: #4b4b4b; /*use your base color*/
+  --base-color: #4b4b4b;
 }
 .loader::before {
   content: '';  

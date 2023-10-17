@@ -1,0 +1,136 @@
+.top {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  background-color: white;
+  margin: 4vh 2vw 0vw 2vw;
+  border-radius: 20px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+}
+  
+.top2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.imagenClima {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  margin-top: -1vw;
+}
+
+.datosActuales {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1vh;
+  flex: 1;
+}
+
+
+@media screen and (min-width: 320px) {
+  .top {
+    /* border: #510101 1px solid; */
+    margin: 3vh 2vw -1vw 2vw;
+    flex: 2;
+  }
+  .top2 {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .imagenClima {
+    margin-top: -0.5vw;
+    flex: 1;
+  }
+  .datosActuales {
+    margin-top: -1vw;
+    flex: 1.5;
+    gap: 0.5vh;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .top {
+    /* border: #0d0151 1px solid; */
+    margin: 3vh 2vw 0vw 2vw;
+    flex: auto;
+  }
+  .top2 {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .imagenClima {
+    margin-top: -0.5vw;
+    flex: 1;
+  }
+  .datosActuales {
+    margin-top: -1vw;
+    flex: 1.5;
+    gap: 0.5vh;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .top {
+    flex: auto;
+    /* border: #015114 1px solid; */
+  }
+  .top2 {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .imagenClima {
+    margin-top: -0.5vw;
+    flex: 1;
+  }
+  .datosActuales {
+    margin-top: -1vw;
+    flex: 1.5;
+    gap: 0.5vh;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .top {
+    flex: auto;
+    /* border: #0008ff 1px solid; */
+  }
+  .top2 {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .imagenClima {
+    margin-top: -0.5vw;
+    flex: 1;
+  }
+  .datosActuales {
+    margin-top: -1vw;
+    flex: 1.5;
+    gap: 0.5vh;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .top {
+    /* border: #440151 1px solid; */
+    margin: 4vh 2vw 0vw 2vw;
+    height: 40%;
+    flex: auto;
+  }
+  .top2 {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .imagenClima {
+    margin-top: -1vw;
+    flex: 1;
+  }
+  .datosActuales {
+    margin-top: -1vw;
+    flex: 1;
+    gap: 1vh;
+  }
+}

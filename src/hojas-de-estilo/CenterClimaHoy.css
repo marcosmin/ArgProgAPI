@@ -16,7 +16,6 @@ p {
   color: white;
 }
 
-
 @media screen and (min-width: 320px) {
   .hoy {
     padding: 1.2vw 0.4vw 1vw 1vw;
