@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ArgProgAPI/static/css/main.0225132a.css",
-    "main.js": "/ArgProgAPI/static/js/main.90cd5b6e.js",
+    "main.css": "/ArgProgAPI/static/css/main.58e7933e.css",
+    "main.js": "/ArgProgAPI/static/js/main.2d33e1ba.js",
     "static/media/thermometer-colder.svg": "/ArgProgAPI/static/media/thermometer-colder.b930564a3e431185e50ffcfe28e23368.svg",
     "static/media/thermometer-warmer.svg": "/ArgProgAPI/static/media/thermometer-warmer.6de36e5f9b33a2dfb35a35cc4cd3dcaa.svg",
     "index.html": "/ArgProgAPI/index.html",
-    "main.0225132a.css.map": "/ArgProgAPI/static/css/main.0225132a.css.map",
-    "main.90cd5b6e.js.map": "/ArgProgAPI/static/js/main.90cd5b6e.js.map"
+    "main.58e7933e.css.map": "/ArgProgAPI/static/css/main.58e7933e.css.map",
+    "main.2d33e1ba.js.map": "/ArgProgAPI/static/js/main.2d33e1ba.js.map"
   },
   "entrypoints": [
-    "static/css/main.0225132a.css",
-    "static/js/main.90cd5b6e.js"
+    "static/css/main.58e7933e.css",
+    "static/js/main.2d33e1ba.js"
   ]
 }
