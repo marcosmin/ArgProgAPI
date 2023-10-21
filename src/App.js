@@ -7,8 +7,8 @@ function App() {
   const [weatherdata, setWeatherdata] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [latitud, setLatitud] = useState(-33.8899);
-  const [longitud, setLongitud] = useState(-60.5736);
+  const [latitud, setLatitud] = useState(-34.7131);
+  const [longitud, setLongitud] = useState(-58.4772);
 
   useEffect(() => {
     setLoading(true);

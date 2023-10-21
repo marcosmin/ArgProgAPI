@@ -22,7 +22,7 @@ function Top ({ weatherdata }) {
   const estadoClimaImagen = estadoClimaJson[weatherdata.current.weathercode].imagen;
   const tempActual = weatherdata.current.temperature_2m;
   const horaActual = String(weatherdata.current.time).slice(-5);
-  const ubicacion = 'Pergamino';
+  const ubicacion = 'Buenos Aires';
 
   return (
     <div className='top'>

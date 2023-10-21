@@ -1,11 +1,11 @@
 import React from 'react';
+import Mapa from './Mapa';
 import '../hojas-de-estilo/Transporte.css';
 
 function Transporte() {
   return (
     <div className='transporte'>
-      <span className="loader"></span>
-      <p>Próximamente App TRANSPORTE</p>
+      <Mapa />
     </div>
   );
 }
