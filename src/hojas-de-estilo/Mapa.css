@@ -11,7 +11,7 @@
   background-color: rgb(255, 255, 255, 0.95);
   width: 42vw;
   height: 3vw;
-  border-radius: 20px;
+  border-radius: 35px;
   top: 1vw;
   z-index: 999;
   box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.25);
@@ -20,7 +20,7 @@
 .selectorFlotante select {
   color: #4a4a4a;
   height: 2vw;
-  font-size: 2vh;
+  font-size: 1.1vw;
   padding: 0.3vw;
   border-radius: 10px 10px 10px 10px;
   border: none;
@@ -33,6 +33,17 @@
 
 .selectorFlotante select option {
   border: 0 !important;
+}
+
+.containerPopup {
+  margin-left: 4px;
+  text-overflow: ellipsis;
+  max-width: 11vw;
+}
+
+/* Oculta el botón "X" en los popups de Leaflet */
+.leaflet-popup-close-button {
+  display: none;
 }
 
 .tituloTransporte {
@@ -49,14 +60,25 @@
 .lineaColectivo {
   border-bottom: #6044AE solid 1px;
   margin-bottom: 0.3vw;
+  margin-top: 0.3vw;
+  font-size: 1vw;
+  color: #4a4a4a;
 }
 
 .direccionColectivo {
   background-color: #4a4a4a;
   color: white;
   border-radius: 0.3vw;
-  padding: 0.25vw;
+  padding: 0.35vw 0.25vw 0.25vw 0.35vw;
   margin-bottom: 0.3vw;
+  margin-top: 0.3vw;
+}
+
+.imagenColectivo {
+  width: 100%;
+  margin-top: 0.5vw;
+  margin-bottom: 0.1vw;
+  border-radius: 10px;
 }
 
 .loader {

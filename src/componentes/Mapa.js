@@ -3,21 +3,28 @@ import "../hojas-de-estilo/Mapa.css";
 import { MapContainer, TileLayer, Popup, Marker } from "react-leaflet";
 import L from "leaflet";
 
+// luego reemplazar Json por transporteData en todo el codigo
+import transporteJson from "../transporte.json";
+
 function Mapa() {
   const [loading, setLoading] = useState(true);
   const [mapaError, setMapaError] = useState(null);
   const [transporteData, setTransporteData] = useState(null);
   const [selectedRoute, setSelectedRoute] = useState("");
+  const [routeID, setRouteID] = useState(22);
 
   useEffect(() => {
     setLoading(true);
     setMapaError(null);
 
     const fetchData = () => {
+
+      const urlAPI = `https://datosabiertos-transporte-apis.buenosaires.gob.ar:443/colectivos/vehiclePositionsSimple?route_id=${routeID}&client_id=cb6b18c84b3b484d98018a791577af52&client_secret=3e3DB105Fbf642Bf88d5eeB8783EE1E6`;
+
       fetch(
-        `https://apitransporte.buenosaires.gob.ar/colectivos/vehiclePositionsSimple?client_id=cb6b18c84b3b484d98018a791577af52&client_secret=3e3DB105Fbf642Bf88d5eeB8783EE1E6`
+        urlAPI
       )
-        .then((response) => response.json())
+        .then((resp) => resp.json())
         .then((data) => {
           setTransporteData(data);
           setLoading(false);
@@ -38,8 +45,8 @@ function Mapa() {
   // Filtrar Lineas de colectivo duplicadas
   const uniqueRoutes = [
     ...new Set(
-      transporteData
-        ? transporteData.map((location) => location.route_short_name)
+      transporteJson
+        ? transporteJson.map((location) => location.route_short_name)
         : []
     ),
   ];
@@ -100,8 +107,8 @@ function Mapa() {
         />
 
         {selectedRoute &&
-          transporteData &&
-          transporteData.map((location, index) => {
+          transporteJson &&
+          transporteJson.map((location, index) => {
             if (location.route_short_name === selectedRoute) {
               return (
                 <Marker
@@ -110,16 +117,28 @@ function Mapa() {
                   icon={colectivoIcon}
                 >
                   <Popup>
-                    <div>
+                    <div className="containerPopup">
                       <div className="lineaColectivo">
                         <strong>LÍNEA: {location.route_short_name}</strong><br />
-                      </div>
-                      <div className="direccionColectivo">
-                        <strong>Con Dirección:</strong> {location.trip_headsign}<br />
                       </div>
                       <strong>Agencia:</strong> {location.agency_name}<br />
                       <strong>Velocidad:</strong> {location.speed}<br />
                       <strong>ID de Ruta:</strong> {location.route_id}<br />
+                      <div className="direccionColectivo">
+                        <strong>Con Dirección:</strong> {location.trip_headsign}<br />
+                      </div>
+                      <div>
+                        {selectedRoute && (
+                          <img
+                            src={`https://www.xcolectivo.com.ar/imagenes/colectivos/fotos/linea${selectedRoute.match(/\d+/)}.jpg`}
+                            alt={selectedRoute}
+                            className="imagenColectivo"
+                            onError={(e) => {
+                              e.target.style.display = 'none'; // Oculta la imagen si ocurre un error al cargarla
+                            }}
+                          />
+                        )}
+                      </div>
                     </div>
                   </Popup>
                 </Marker>
@@ -141,4 +160,6 @@ client_id: cb6b18c84b3b484d98018a791577af52
 client_secret: 3e3DB105Fbf642Bf88d5eeB8783EE1E6
 https://apitransporte.buenosaires.gob.ar/colectivos/vehiclePositionsSimple?client_id=SU_CLIENT_ID&client_secret=SU_CLIENT_SECRET
 https://apitransporte.buenosaires.gob.ar/colectivos/vehiclePositionsSimple?client_id=cb6b18c84b3b484d98018a791577af52&client_secret=3e3DB105Fbf642Bf88d5eeB8783EE1E6
+
+https://datosabiertos-transporte-apis.buenosaires.gob.ar:443/colectivos/vehiclePositionsSimple?route_id=22&client_id=cb6b18c84b3b484d98018a791577af52&client_secret=3e3DB105Fbf642Bf88d5eeB8783EE1E6
 */
