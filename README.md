@@ -1,6 +1,6 @@
-# Aplicación de Clima en REACT 🌤️
+# Aplicación de Clima y transporte en REACT 🌤️🚌
 
-¡Bienvenido/a a la Aplicación de Clima desarrollada con React! Esta aplicación proporciona información detallada sobre el clima actual, el pronóstico diario y otros datos relevantes, como el índice UV, la velocidad del viento, la humedad, la visibilidad y la calidad del aire.
+¡Bienvenido/a a la Aplicación de Clima y transporte desarrollada con React! Esta aplicación proporciona información detallada sobre el clima actual, el pronóstico diario y otros datos relevantes, como el índice UV, la velocidad del viento, la humedad, la visibilidad y la calidad del aire. Y por otro lado tambien podes obtener la ubicacion en tiempo real de los colectivos de Buenos Aires que se actualiza cada 30 segundos.
 
 Esta aplicación se creó como parte de un proyecto práctico durante la formación en "Argentina Programa 4.0", ofrecida por FAMAF - UNC en el año 2023. | 👨‍🎓 Desarrollador: Marcos Mingo.
 
@@ -12,6 +12,7 @@ Esta aplicación se creó como parte de un proyecto práctico durante la formaci
 El proyecto está organizado en varios archivos y directorios que cumplen diferentes funciones. A continuación, se describen estos componentes y archivos clave:
 
 ### Componentes de React
+#### CLIMA
 
 1. ☀️ **TopImagenClima**: Este componente muestra una imagen que representa el estado del clima actual.
 
@@ -30,6 +31,12 @@ El proyecto está organizado en varios archivos y directorios que cumplen difere
 8. 🌡️ **FooterMaxMin**: Muestra las temperaturas máxima y mínima para el día actual.
 
 9. 🌎 **FooterIndices**: Muestra varios índices relacionados con el clima, como el índice UV, la velocidad del viento, la hora del amanecer y otros.
+
+#### TRANSPORTE
+
+1. 🚌 **Selector de Linea**: Podes seleccionar la linea de colectivo que quieras visualizar en el mapa en tiempo real.
+
+2. 💬 **Popup**: Puedes seleccionar el icono de la linea que aparece en el mapa y podras obtener detalles como la agencia, la velocidad y la direccion a la que se dirige.
 
 ### Archivos JSON
 
