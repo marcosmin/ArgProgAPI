@@ -3,9 +3,6 @@ import "../hojas-de-estilo/Mapa.css";
 import { MapContainer, TileLayer, Popup, Marker } from "react-leaflet";
 import L from "leaflet";
 
-// luego reemplazar Json por transporteData en todo el codigo
-import transporteJson from "../transporte.json";
-
 function Mapa() {
   const [loading, setLoading] = useState(true);
   const [mapaError, setMapaError] = useState(null);
@@ -45,8 +42,8 @@ function Mapa() {
   // Filtrar Lineas de colectivo duplicadas
   const uniqueRoutes = [
     ...new Set(
-      transporteJson
-        ? transporteJson.map((location) => location.route_short_name)
+      transporteData
+        ? transporteData.map((location) => location.route_short_name)
         : []
     ),
   ];
@@ -107,8 +104,8 @@ function Mapa() {
         />
 
         {selectedRoute &&
-          transporteJson &&
-          transporteJson.map((location, index) => {
+          transporteData &&
+          transporteData.map((location, index) => {
             if (location.route_short_name === selectedRoute) {
               return (
                 <Marker
