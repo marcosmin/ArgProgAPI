@@ -1,65 +1,61 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useContext } from 'react';
+import { ClimaContext } from '../App';
+import iconBuscar from '../imagenes/buscar.svg';
 import '../hojas-de-estilo/TopInputCiudad.css';
 
-function TopInputCiudad () {
-  const [nombreCiudad, setNombreCiudad] = useState('');
-  const [coordenadas, setCoordenadas] = useState(null);
+function TopInputCiudad() {
+  const [inputValue, setInputValue] = useState('');
+  const [sugerencias, setSugerencias] = useState([]);
+  const [error, setError] = useState(null);
 
-  useEffect(() => {
-    if (nombreCiudad.trim() === '') {
-      // Si el campo de entrada está vacío, reiniciar coordenadas
-      setCoordenadas(null);
-      return;
-    }
+  const { setLatitud, setLongitud, setUbicacion } = useContext(ClimaContext);
 
-    // Llamar a la API de OpenStreetMap Nominatim para obtener las coordenadas
-    const baseUrl = 'https://nominatim.openstreetmap.org/search';
-    const format = 'json';
-    const limit = 1;
+  const handleInputChange = (event) => {
+    setInputValue(event.target.value);
+  };
 
-    const url = `${baseUrl}?format=${format}&q=${nombreCiudad}&limit=${limit}`;
+  const getSugerencias = (ciudad) => {
+    setError(null);
 
-    fetch(url)
-      .then(response => response.json())
-      .then(data => {
-        if (data.length > 0) {
-          const resultado = data[0];
-          let latitud = resultado.lat;
-          let longitud = resultado.lon;
-          console.log(`latitud: ${latitud} longitud: ${longitud}`);
-          setCoordenadas({ latitud, longitud });
+    const apiUrl = `https://geocoding-api.open-meteo.com/v1/search?name=${ciudad}&count=10&language=es&format=json`;
+
+    fetch(apiUrl)
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.results && data.results.length > 0) {
+          setSugerencias(data.results);
+          setLatitud(data.results[0].latitude);
+          setLongitud(data.results[0].longitude);
+          setUbicacion(ciudad); // Agrega el valor del input al contexto
         } else {
-          console.error('Ciudad no encontrada.');
+          setError('No se encontraron sugerencias.');
         }
       })
-      .catch(error => {
-        console.error('Error al llamar a la API de OpenStreetMap Nominatim:', error);
+      .catch((error) => {
+        setError('Error al buscar sugerencias de geocodificación.');
+        console.error('Error al buscar sugerencias de geocodificación:', error);
       });
-    }, [nombreCiudad]
-  );
-    
-  // Manejador de eventos para la tecla 'Enter' en el input
-  const handleKeyPress = event => {
-    if (event.key === 'Enter') {
-      // Actualiza el estado nombreCiudad cuando se presiona Enter
-      setNombreCiudad(event.target.value);
-    }
   };
 
-  const handleInputChange = event => {
-    setNombreCiudad(event.target.value);
+  const handleBuscarClick = () => {
+    setSugerencias([]);
+    getSugerencias(inputValue);
   };
-  
+
   return (
     <div className='ciudad'>
       <input
         className='input-ciudad'
         type='text'
         placeholder='El Tiempo en...'
-        value={nombreCiudad}
-        onKeyPress={handleKeyPress}
+        value={inputValue}
         onChange={handleInputChange}
       />
+      <button
+        className='botonBuscar'
+        onClick={handleBuscarClick}>
+        <img src={ iconBuscar } alt={'icono buscar'} />
+      </button>
     </div>
   );
 }

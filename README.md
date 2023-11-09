@@ -1,6 +1,6 @@
-# Aplicación de Clima y transporte en REACT 🌤️🚌
+# Aplicación de clima y transporte en REACT 🌤️🚌
 
-¡Bienvenido/a a la Aplicación de Clima y transporte desarrollada con React! Esta aplicación proporciona información detallada sobre el clima actual, el pronóstico diario y otros datos relevantes, como el índice UV, la velocidad del viento, la humedad, la visibilidad y la calidad del aire. Y por otro lado tambien podes obtener la ubicacion en tiempo real de los colectivos de Buenos Aires que se actualiza cada 30 segundos.
+¡Bienvenido/a a la Aplicación de clima y transporte desarrollada con React! Esta aplicación proporciona información detallada sobre el clima actual, el pronóstico diario y otros datos relevantes, como el índice UV, la velocidad del viento, la humedad, la visibilidad y la calidad del aire. Y por otro lado tambien podes obtener la ubicacion en tiempo real de los colectivos de Buenos Aires que se actualiza cada 30 segundos.
 
 Esta aplicación se creó como parte de un proyecto práctico durante la formación en "Argentina Programa 4.0", ofrecida por FAMAF - UNC en el año 2023. | 👨‍🎓 Desarrollador: Marcos Mingo.
 
@@ -9,7 +9,7 @@ Esta aplicación se creó como parte de un proyecto práctico durante la formaci
 
 ## Estructura del Proyecto
 
-El proyecto está organizado en varios archivos y directorios que cumplen diferentes funciones. A continuación, se describen estos componentes y archivos clave:
+El proyecto está organizado en varios archivos y directorios que cumplen diferentes funciones. A continuación, se describen estos componentes y archivos claves:
 
 ### Componentes de React
 #### CLIMA
@@ -38,15 +38,9 @@ El proyecto está organizado en varios archivos y directorios que cumplen difere
 
 2. 💬 **Popup**: Puedes seleccionar el icono de la linea que aparece en el mapa y podras obtener detalles como la agencia, la velocidad y la direccion a la que se dirige.
 
-### Archivos JSON
+## Consumo de APIS
 
-- 📄 **clima.json**: Contiene datos relacionados con el clima actual y pronósticos futuros.
-
-- 📄 **estadoClima.json**: Proporciona información sobre el estado del clima en función de códigos de estado.
-
-## Datos del Clima
-
-El código obtiene datos del clima de los archivos JSON mencionados anteriormente y realiza cálculos basados en estos datos para mostrar información relevante en la aplicación.
+La App consume 2 APIS, obtiene datos de clima de la API "Open Meteo" y realiza consultas de la ubicación de los colectivos de Buenos Aires con la API oficial del transporte de Buenos Aires.
 
 ## Scroll Horizontal
 
@@ -74,7 +68,7 @@ Para ejecutar la aplicación, se necesita un entorno de desarrollo de React conf
 
 ## Conclusiones
 
-Este proyecto proporciona una aplicación de pronóstico del clima que muestra información relevante de manera organizada y atractiva. El código se basa en React y utiliza datos de archivos JSON para mostrar datos y pronósticos en tiempo real (aun no implementado). La aplicación también incorpora una descripcion personalizada segun el valor del indice para proporcionar una experiencia de usuario completa.
+Este proyecto proporciona una aplicación de pronóstico del clima que muestra información relevante de manera organizada y atractiva. El código se basa en React y utiliza la API "Open Meteo" para mostrar datos y pronósticos en tiempo real. La aplicación también incorpora una descripcion personalizada segun el valor del indice para proporcionar una experiencia de usuario completa. Tambien realiza consultas de la ubicación en tiempo real de los colectivos de Buenos Aires con la API oficial del transporte de la ciudad.
 
 
 ---

@@ -1,14 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { ClimaContext } from '../App';
+
 import TopInputCiudad from './TopInputCiudad';
 import TopImagenClima from './TopImagenClima';
 import TopTemperaturaActual from './TopTemperaturaActual';
 import TopDia from './TopDia';
 import TopCiudad from './TopCiudad';
+
 import estadoClimaJson from "../estadoClima.json";
 import '../hojas-de-estilo/Top.css';
 
-function Top ({ weatherdata }) {
-  // Obtener fecha
+function Top({ weatherdata }) {
   const fecha = new Date(weatherdata.current.time);
   const diasSemana = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
   const nombreDia = diasSemana[fecha.getDay()];
@@ -22,7 +24,7 @@ function Top ({ weatherdata }) {
   const estadoClimaImagen = estadoClimaJson[weatherdata.current.weathercode].imagen;
   const tempActual = weatherdata.current.temperature_2m;
   const horaActual = String(weatherdata.current.time).slice(-5);
-  const ubicacion = 'Buenos Aires';
+  const { ubicacion } = useContext(ClimaContext);
 
   return (
     <div className='top'>
@@ -39,6 +41,6 @@ function Top ({ weatherdata }) {
       </div>
     </div>
   );
-};
+}
 
 export default Top;

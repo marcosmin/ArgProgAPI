@@ -7,6 +7,12 @@
 
 @media screen and (min-width: 320px) {
   .temperatura  {
+    font-size: 8.5vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .temperatura  {
     font-size: 6.5vw;
   }
 }

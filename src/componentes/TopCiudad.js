@@ -6,7 +6,7 @@ function TopCiudad({ ubicacion }) {
   return (
     <div className='ciudad'>
       <img src={ imgUbicacion } alt='ubicacion' />
-      <p>{ ubicacion }</p>
+      <p>{ ubicacion.toUpperCase() }</p>
     </div>
   );
 }
